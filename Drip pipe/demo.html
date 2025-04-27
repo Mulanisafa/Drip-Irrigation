@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreeja Polychem | Drip Irrigation Solutions</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+
+  <style>
+    header {
+      background: url('drip.jpg') no-repeat center center;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    header:hover {
+      background-position: center 10%; /* Slightly shift the background image position */
+    }
+    header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+      background-color: #212529;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .carousel-inner img {
+      height: 500px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="drip1.jpg" alt="Logo"> Shreeja Polychem
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="d-flex align-items-center justify-content-center text-center">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Drip Pipe Granules</h1>
+      <p class="lead">Leading the way in drip irrigation technology</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================= Introduction Section ======================= -->
+<section id="home-intro" data-aos="fade-up">
+  <div class="container text-center">
+    <!-- Section Title -->
+    <!-- <h2>Welcome to Our Drip Irrigation Project</h2> -->
+    <h2 class="text-center mb-3" style="font-weight: bold;">Welcome to Our Drip Irrigation Project</h2>
+    <p>Innovative solutions for sustainable agriculture.</p>
+    
+    <!-- Introduction Image with Hover Animation -->
+    <img src="drip11.webp" class="img-fluid mt-4 rounded" alt="Introduction Image" id="introImage">
+  </div>
+</section>
+
+<!-- ======================= Custom CSS for Hover and Animation ======================= -->
+<style>
+  /* Introduction Section Styling */
+  #home-intro {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8f9fa; /* Light background */
+  }
+
+  /* Section Title and Text Styling */
+  /* #home-intro h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black; /* Blue color for emphasis */
+  } */
+
+  #home-intro p {
+    font-size: 18px;
+    color: #555; /* Darker gray for readability */
+    margin-top: 10px;
+  }
+
+  /* Image Hover Effect and Animation */
+  #introImage {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for professionalism */
+    transition: transform 0.5s ease, box-shadow 0.3s ease-in-out; /* Smooth transition for scaling and shadow */
+    animation: fadeIn 1s ease-out; /* Animation when the image is loaded */
+  }
+
+  /* Hover Effect: Slight Zoom and Shadow */
+  #introImage:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
+
+  /* Animation to Fade in the Image */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+    <!-- About Us -->
+    <!-- <section id="about" class="bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5">About Us</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="DRIP 1.avif" class="img-fluid rounded" alt="About Us">
+          </div>
+          <div class="col-md-6">
+            <h3>Revolutionizing Drip Irrigation</h3>
+            <p>At Shreeja Polychem, we are committed to developing innovative and sustainable drip irrigation solutions for modern agriculture.</p>
+            <p>Our granules ensure optimum water usage, leading to increased productivity and a greener planet.</p>
+            <p>Partner with us to drive agricultural excellence.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- ======================= About Us Section ======================= -->
+<section id="about" class="bg-light py-5" data-aos="fade-up">
+  <div class="container">
+    
+    <!-- Section Title -->
+    <h2 class="text-center mb-5" style="font-weight: bold;">ABOUT US</h2>
+    
+    <!-- Section Content (Image and Text) -->
+    <div class="row align-items-center">
+      
+      <!-- About Us Image (left column) -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <!-- Image of Drip Irrigation with smaller size and added animation -->
+        <img src="DRIP 1.avif" class="img-fluid rounded shadow-lg" alt="About Us - Drip Irrigation" style="max-height: 300px; object-fit: cover;" data-aos="zoom-in">
+      </div>
+      
+      <!-- About Us Text (right column) -->
+      <div class="col-md-6">
+        <!-- Header: Eye-catching and concise -->
+        <h3 class="text-uppercase text-dark">Innovating the Future of Agriculture</h3>
+        
+        <!-- Paragraph 1: Brief Overview of the Company -->
+        <p class="lead">At <strong>Shreeja Polychem</strong>, we are pioneering the development of sustainable, state-of-the-art drip irrigation solutions that empower farmers to maximize crop yield while minimizing water waste.</p>
+        
+        <!-- Paragraph 2: Core Values -->
+        <p>Our expertise lies in creating <strong>granules</strong> that optimize water usage for drip systems, ensuring <strong>increased productivity</strong> while contributing to a more sustainable agricultural future.</p>
+        
+        <!-- Paragraph 3: Call-to-Action -->
+        <p class="font-weight-bold">Join us on our mission to revolutionize agriculture and create a greener, more efficient world. Together, we can achieve agricultural excellence!</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Custom CSS for Styling ======================= -->
+<style>
+  /* About Section Styling */
+  #about {
+    background-color: #f8f9fa; /* Light background */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  /* Header Styling */
+  /* #about h2 {
+    font-size: 36px;
+    color:black; /* Blue color for emphasis */
+    font-weight: bold;
+  } */
+  
+  /* Subheader Styling */
+  #about h3 {
+    font-size: 28px;
+    color: #333; /* Darker text for contrast */
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  /* Paragraph Styling */
+  #about p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555; /* Lighter color for readability */
+  }
+  
+  /* Image Styling */
+  #about img {
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for professionalism */
+  transition: transform 0.5s ease-in-out; /* Add transition for animation effect */
+  max-width: 100%; /* Ensure it fills the container but maintains responsiveness */
+  width: 80%; /* Increase the width to 80% of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+  
+  /* Hover Animation Effect for Image */
+  #about img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+</style>
+
+
+    <!-- ======================= Services Section ======================= -->
+<section id="services" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-weight: bold;">OUR SERVICES</h2>
+
+    
+    <div class="row g-4">
+      
+      <!-- Drip Irrigation Installation Card -->
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <!-- Image: Installing Drip Irrigation System -->
+          <img src="Drip install2.jpg" class="card-img-top service-img" alt="Installation Service">
+          <div class="card-body">
+            <h5 class="card-title">Drip Irrigation Installation</h5>
+            <p class="card-text">Professional setup of customized drip irrigation systems to suit your field's needs.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Maintenance and Repair Card -->
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <!-- Image: Technician Repairing Irrigation System -->
+          <img src="drip9.jpg" class="card-img-top service-img" alt="Maintenance Service">
+          <div class="card-body">
+            <h5 class="card-title">Maintenance and Repair</h5>
+            <p class="card-text">Ensure your systems run flawlessly with our expert maintenance and repair services.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Consultation and Design Card -->
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <!-- Image: Consultation on Irrigation Design -->
+          <img src="drip main.jpeg" class="card-img-top service-img" alt="Consultation Service">
+          <div class="card-body">
+            <h5 class="card-title">Consultation and Design</h5>
+            <p class="card-text">Customized drip system design and consultation by industry specialists.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================= Custom CSS for Service Images ======================= -->
+<style>
+  /* Uniform size for all service images */
+  .service-img {
+    width: 100%;
+    height: 250px; /* Set fixed height */
+    object-fit: cover; /* Crop & center image nicely */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+</style>
+
+
+    <!-- ======================= Products Section ======================= -->
+     <!-- ======================= Products Section ======================= -->
+<section id="products" class="bg-light py-5" data-aos="fade-up">
+  <div class="container">
+    <!-- Section Title -->
+    <h2 class="text-center mb-5" style="font-weight: bold;">OUR PRODUCTS</h2>
+    
+    <!-- Product Cards Row -->
+    <div class="row g-4">
+      
+      <!-- First Product Card (LLDPE Granules) -->
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <img src="granules1.webp" class="card-img-top" alt="LLDPE Granules" style="object-fit: cover; height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">LLDPE Granules</h5>
+            <p class="card-text">High-quality granules used in manufacturing drip irrigation pipes.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Second Product Card (Other Product) -->
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <img src="drip imgg.jpeg" class="card-img-top" alt="Other Product" style="object-fit: cover; height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Drip Irrigation System</h5>
+            <p class="card-text">Efficient systems for water distribution across agricultural fields.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third Product Card (Drip Components) -->
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <img src="drip components.jpg" class="card-img-top" alt="Drip Components" style="object-fit: cover; height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Drip Irrigation Components</h5>
+            <p class="card-text">Various components designed for an optimized irrigation system.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- End of row -->
+  </div>
+</section>
+
+<!-- ======================= Custom CSS for Styling ======================= -->
+<style>
+  /* Products Section Styling */
+  #products {
+    background-color: #f8f9fa; /* Light background */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  /* Header Styling */
+  /* #products h2 {
+    font-size: 36px;
+    color:black; /* Blue color for emphasis */
+    font-weight: bold;
+  } */
+
+  /* Card Image Styling */
+  .card-img-top {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for professionalism */
+    transition: transform 0.5s ease-in-out; /* Add transition for image animation */
+  }
+
+  /* Image Hover Effect */
+  .card-img-top:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+
+  /* Card Body Text Styling */
+  .card-body {
+    padding: 1.25rem; /* Padding for better spacing */
+  }
+
+  /* Card Title Styling */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  /* Card Text Styling */
+  .card-text {
+    font-size: 1rem;
+    color: #555; /* Lighter color for readability */
+  }
+</style>
+
+
+
+    <!-- Contact Us -->
+    <section id="contact" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5" style="font-weight: bold;">CONTACT US</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Kiran Katare</h5>
+            <p><i class="fas fa-phone-alt"></i> 9897405005</p>
+            <h5>Vaibhav Sase</h5>
+            <p><i class="fas fa-phone-alt"></i> 9028499111</p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Safa Mulani | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
